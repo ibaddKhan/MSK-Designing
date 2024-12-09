@@ -1,14 +1,9 @@
-import { useState } from 'react'
-import './App.css'
-import Home from '../src/screens/Home/Home.jsx'
-function App() {
-  const [count, setCount] = useState(0)
+import Routers from "./config/router/routes";
 
+export default function App() {
   return (
     <>
-     <Home />
-     </>
-  )
+      <Routers />
+    </>
+  );
 }
-
-export default App
