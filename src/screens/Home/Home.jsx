@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import bg_fig from "../../assets/hero_bg.png";
 import hero_guy from "../../assets/hero_guy.png";
@@ -7,7 +6,6 @@ import "https://static.elfsight.com/platform/platform.js";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <section className="fixed_bg">
         <div className="bg-black relative min-w-screen h-[700px]">
           <img

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="absolute top-0 left-0 flex items-center w-full z-10 mt-10 bg-opacity-50 text-white py-4 px-4">
+    <div className="absolute top-0 left-0 flex items-center w-full z-50  mt-10 bg-opacity-50  text-white py-4 px-4">
       <div className="flex justify-start">
         <img src={Logo} className=" w-32" alt="Logo" />
       </div>
