@@ -14,9 +14,9 @@ const Home = () => {
             className="absolute top-0 left-0 w-full h-full opacity-15 z-0"
           />
 
-          <div className="flex justify-center items-center h-screen px-4 sm:px-8 lg:justify-center lg:flex-row">
+          <div className="flex justify-center items-center px-4 sm:px-8 flex-col-reverse lg:flex-row">
             {/* Content Section */}
-            <div className="relative z-40 px-4 sm:px-8 max-w-lg text-center lg:text-left">
+            <div className="relative mt-40 md:mt-0 z-40 px-4 sm:px-8 max-w-xl text-center lg:text-left">
               <h1 className="text-white text-3xl sm:text-4xl font-bold leading-snug">
                 <span className="block">The Modern Duo of</span>
                 Printing & Digital
@@ -39,9 +39,8 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Hero Image Section */}
-            <div className="relative mt-6 lg:mt-0 flex items-center justify-center hidden lg:block">
-              <img src={hero_guy} alt="Hero" className="w-5/6" />
+            <div className="relative hidden md:block">
+              <img src={hero_guy} alt="Hero" className="w-4/5 md:w-5/6" />
             </div>
           </div>
         </div>

@@ -23,3 +23,6 @@
 .nav-link:hover::after {
   transform: scaleY(1); /* Expand to full height */
 }
+* {
+  font-family: "Poppins", serif;
+}
