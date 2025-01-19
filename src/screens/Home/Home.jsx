@@ -5,6 +5,7 @@ import Marquee from "../../components/Partners/MaqueeAnimation";
 import OurServices from "../../components/ServicesCard/SeviceCard";
 import Hero from "../../components/Hero/Hero";
 import Features from "../../components/FeatureCards/FeatureCards";
+import ContactForm from "../../components/ContactForm/ContactForm";
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
       </section>
       <section className="relative z-10 ">
         <Features />
+      </section>
+      <section className="relative z-10 ">
+        <ContactForm />
       </section>
       <section className="absolute z-20">
         <div
