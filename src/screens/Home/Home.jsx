@@ -2,20 +2,20 @@ import Navbar from "../../components/Navbar/Navbar";
 import bg_fig from "../../assets/hero_bg.png";
 import hero_guy from "../../assets/hero_guy.png";
 import "https://static.elfsight.com/platform/platform.js";
+import CardSection from "../../components/Satisfaction-card/Cards";
+import Marquee from "../../components/Partners/MaqueeAnimation";
 
 const Home = () => {
   return (
     <>
-      <section className="fixed_bg">
+      <section className="fixed_bg  relative z-0">
         <div className="bg-black relative min-w-screen h-[700px]">
           <img
             src={bg_fig}
             alt="Background"
-            className="absolute top-0 left-0 w-full h-full opacity-15 z-0"
+            className="relative top-0 left-0 w-full h-full opacity-15 z-0"
           />
-
-          <div className="flex justify-center items-center px-4 sm:px-8 flex-col-reverse lg:flex-row">
-            {/* Content Section */}
+          <div id="hero_content_div" className="flex justify-between absolute md:inset-0 top-10 z-0 items-center px-4 sm:px-8 flex-col-reverse lg:flex-row">
             <div className="relative mt-40 md:mt-0 z-40 px-4 sm:px-8 max-w-xl text-center lg:text-left">
               <h1 className="text-white text-3xl sm:text-4xl font-bold leading-snug">
                 <span className="block">The Modern Duo of</span>
@@ -30,23 +30,30 @@ const Home = () => {
                 journey of inspiration and transformation.
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+                <button
+                  className="bg-white font-semibold rounded-full text-black px-6 py-2 hover:bg-[#fca821] hover:border-10 hover:border-white transition duration-300"
+                >
                   Our Services
                 </button>
-                <button className="bg-gray-700 text-white px-6 py-2 rounded hover:bg-gray-800">
+                <button className="bg-gray-800 bg-opacity-50 border rounded-full text-white px-6 py-2 hover:bg-transparent">
                   Get Quotes
                 </button>
               </div>
             </div>
 
-            <div className="relative hidden md:block">
-              <img src={hero_guy} alt="Hero" className="w-4/5 md:w-5/6" />
+            <div className="relative bottom-0  hidden lg:block">
+              <img src={hero_guy} alt="Hero" className=" " />
             </div>
           </div>
         </div>
       </section>
-
-      <section className="absolute">
+      <section className="relative z-10 ">
+        <CardSection />
+      </section>
+      <section className="relative z-10 ">
+        <Marquee />
+      </section>
+      <section className="absolute z-20">
         <div
           className="elfsight-app-ab942225-88dc-4c18-87e3-4d342f1c3fce"
           data-elfsight-app-lazy
