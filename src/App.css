@@ -53,3 +53,37 @@
     transform: translateX(-50%);
   }
 }
+.card {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.service-item {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.service-item.fade-in {
+  opacity: 1;
+}
+
+.service-item.scale-up {
+  transform: scale(1);
+}
+#hero_para span {
+  color: gray;
+  transition: color 0.3s ease;
+}
+/* Add these to your CSS file */
+.navbar-mobile {
+  transform: translateX(200%); /* Initially hidden off-screen */
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-mobile.open {
+  transform: translateY(0%);
+}
