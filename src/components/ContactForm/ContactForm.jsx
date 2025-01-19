@@ -2,9 +2,22 @@ import React from 'react';
 
 const ContactForm = () => {
     return (
-        <div className="min-h-screen bg-[#1a1b1c] flex mx-10 rounded-3xl items-center justify-center">
-            <div className="bg-[#1a1b1c] text-white rounded-full shadow-lg p-8 md:p-12 lg:flex lg:gap-12">
+        <div className="min-h-screen bg-[#1a1b1c] mb-10 flex  mx-4 lg:mx-10 rounded-3xl items-center justify-center">
+            <div className="bg-[#1a1b1c] text-white rounded-full shadow-lg p-8 md:p-12 lg:flex lg:flex-row-reverse  lg:gap-12">
                 {/* Form Section */}
+                <div className="lg:w-1/2 mb-10 lg:mt-32 mt-8 text-gray-300">
+                    <h2 className="text-4xl mx-3 font-bold mb-8">
+                        We Offer <span className="text-yellow-500">Creative</span> Solutions
+                    </h2>
+                    <div className='text-xl'>
+                        <p className="mb-4">
+                            We offer creative solutions to marketing needs and understand your business needs across a wide range of design & advertising solutions.
+                        </p>
+                        <p>
+                            We offer our clients the most effective angles to approach their marketing needs and effectively build their brand.
+                        </p>
+                    </div>
+                </div>
                 <div className="lg:w-1/2">
                     <h2 className="text-3xl font-bold mb-4">Project Inquiry</h2>
                     <form className="space-y-6">
@@ -61,20 +74,7 @@ const ContactForm = () => {
                     </form>
                 </div>
 
-                {/* Description Section */}
-                <div className="lg:w-1/2 lg:mt-0 mt-8 text-gray-300">
-                    <h2 className="text-4xl mx-3 font-bold mb-8">
-                        WHAT MAKES US <span className="text-yellow-500">DIFFERENT</span>
-                    </h2>
-                    <div className='text-xl'>
-                        <p className="mb-4">
-                            We offer creative solutions to marketing needs and understand your business needs across a wide range of design & advertising solutions.
-                        </p>
-                        <p>
-                            We offer our clients the most effective angles to approach their marketing needs and effectively build their brand.
-                        </p>
-                    </div>
-                </div>
+
             </div>
         </div>
     );
