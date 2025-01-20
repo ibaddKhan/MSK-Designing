@@ -87,3 +87,86 @@
 .navbar-mobile.open {
   transform: translateY(0%);
 }
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.75) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fade-scale {
+  animation: fadeScale 0.4s ease-out forwards;
+}
+/* Ensure the swiper container has relative positioning */
+.container {
+  position: relative;
+}
+
+/* Position the navigation buttons outside of the container */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Adjust right for the next button and left for the previous button */
+.swiper-button-next {
+  right: -10px; /* Move it outside */
+}
+
+.swiper-button-prev {
+  left: -10px; /* Move it outside */
+}
+
+/* Optional: Style the navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fca821;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 3px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fca821; /* Orange color for the active dot */
+}
+/* Add this CSS */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 0.6s forwards;
+}
+
+.slide-in-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.slide-in-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.slide-in-delay-3 {
+  animation-delay: 0.5s;
+}

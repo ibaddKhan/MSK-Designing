@@ -43,8 +43,8 @@ const Hero = () => {
                 className="flex justify-between absolute md:inset-0 top-10 z-0 items-center px-4 sm:px-8 flex-col-reverse lg:flex-row"
             >
                 <div className="relative mt-40 md:mt-0 z-40 px-4 sm:px-8 max-w-xl text-center lg:text-left">
-                    <h1 className="text-white text-3xl sm:text-4xl font-bold leading-snug">
-                        <span className="block">The Modern Duo of</span>
+                    <h1 className="text-white text-3xl sm:text-5xl font-bold leading-snug">
+                        <span className="block text-[#fca821]">The Modern Duo of</span>
                         Printing & Digital
                     </h1>
                     <p
@@ -76,7 +76,6 @@ const Hero = () => {
                         </button>
                     </div>
                 </div>
-
                 <div className="relative bottom-0 hidden lg:block">
                     <img src={hero_guy} alt="Hero" className="" />
                 </div>

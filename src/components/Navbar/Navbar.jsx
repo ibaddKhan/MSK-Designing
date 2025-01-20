@@ -1,5 +1,6 @@
 import Hamburger from "hamburger-react";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa";
 
@@ -35,30 +36,30 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-7 ml-auto relative">
-          <a className="nav-link">HOME</a>
-          <a className="nav-link">PORTFOLIO</a>
+          <Link to="/" className="nav-link">HOME</Link>
+          <Link to={"/portfolio"} className="nav-link">PORTFOLIO</Link>
           <div className="nav-link group relative flex items-center cursor-pointer">
             <div className="flex items-center"><span>SERVICES</span> <FaChevronDown className="ml-2 text-sm " /></div>
             <div className="absolute left-0 top-full hidden group-hover:block bg-black text-white py-2 w-48 shadow-md">
-              <a className="block px-4 py-2 hover:bg-gray-700" href="#">
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Graphic Design
               </a>
-              <a className="block px-4 py-2 hover:bg-gray-700" href="#">
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Giveaway & Promotional Items
               </a>
-              <a className="block px-4 py-2 hover:bg-gray-700" href="#">
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Printing Services
               </a>
-              <a className="block px-4 py-2 hover:bg-gray-700" href="#">
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Indoor & Outdoor Signs
               </a>
-              <a className="block px-4 py-2 hover:bg-gray-700" href="#">
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Corporate Photography
               </a>
-              <a className="block px-4 py-2 hover:bg-gray-700" href="#">
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Digital Marketing
               </a>
-              <a className="block px-4 py-2 hover:bg-gray-700" href="#">
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Event Management
               </a>
             </div>
