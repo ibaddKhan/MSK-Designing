@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,6 +16,31 @@ const ImageSlider = ({ images }) => {
     const closeModal = () => {
         setSelectedImage(null);
     };
+
+    // Close modal on scroll or swipe/tap
+    useEffect(() => {
+        const handleScroll = () => {
+            if (selectedImage) closeModal();
+        };
+
+        const handleTouchStart = (e) => {
+            const touchStart = e.touches[0].clientY;
+            e.currentTarget.addEventListener('touchend', (e) => {
+                const touchEnd = e.changedTouches[0].clientY;
+                if (touchStart !== touchEnd) closeModal(); // Detect swipe
+            });
+        };
+
+        if (selectedImage) {
+            window.addEventListener('scroll', handleScroll);
+            document.addEventListener('touchstart', handleTouchStart);
+        }
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('touchstart', handleTouchStart);
+        };
+    }, [selectedImage]);
 
     return (
         <div className="container mx-auto relative">
@@ -48,22 +73,23 @@ const ImageSlider = ({ images }) => {
 
             {selectedImage && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-75 flex justify-center mx-auto md:w-2/4 items-center z-50"
+                    className="fixed inset-0 flex justify-center items-center z-50 bg-black bg-opacity-50"
                     onClick={closeModal}
                 >
                     <div className="relative">
                         <img
                             src={selectedImage}
                             alt="Selected"
-                            className="max-w-full max-h-full rounded-lg shadow-lg"
+                            className="w-96 h-96 rounded-lg shadow-lg object-cover"
                         />
+
+                        <button
+                            onClick={closeModal}
+                            className="absolute top-5 right-5 text-3xl text-white font-bold"
+                        >
+                            &times;
+                        </button>
                     </div>
-                    <button
-                        onClick={closeModal}
-                        className="absolute top-5 right-5 text-3xl text-white font-bold"
-                    >
-                        &times;
-                    </button>
                 </div>
             )}
         </div>
