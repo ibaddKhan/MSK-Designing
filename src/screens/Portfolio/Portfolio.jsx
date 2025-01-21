@@ -13,6 +13,28 @@ import acrylicSignage1 from '../../assets/portfolio_assets/Acrylic Sign/img1.jpg
 import acrylicSignage2 from '../../assets/portfolio_assets/Acrylic Sign/img2.jpg';
 import acrylicSignage3 from '../../assets/portfolio_assets/Acrylic Sign/img3.jpg';
 import acrylicSignage4 from '../../assets/portfolio_assets/Acrylic Sign/img4.jpg';
+import businessCard1 from '../../assets/portfolio_assets/Busines Card/img1.jpg';
+import businessCard2 from '../../assets/portfolio_assets/Busines Card/img2.jpeg';
+import businessCard3 from '../../assets/portfolio_assets/Busines Card/img3.jpg';
+import businessCard4 from '../../assets/portfolio_assets/Busines Card/img4.jpg';
+import constructionBoard1 from '../../assets/portfolio_assets/Condtruction/img1.jpg';
+import constructionBoard2 from '../../assets/portfolio_assets/Condtruction/img2.webp';
+import constructionBoard3 from '../../assets/portfolio_assets/Condtruction/img3.jpg';
+import eachingPlate1 from '../../assets/portfolio_assets/Eaching Plate/img1.jpg';
+import eachingPlate2 from '../../assets/portfolio_assets/Eaching Plate/img2.jpg';
+import eachingPlate3 from '../../assets/portfolio_assets/Eaching Plate/img3.jpg';
+import flyer1 from '../../assets/portfolio_assets/Flyer/img1.jpg';
+import flyer2 from '../../assets/portfolio_assets/Flyer/img2.jpg';
+import flyer3 from '../../assets/portfolio_assets/Flyer/img3.jpg';
+import flyer4 from '../../assets/portfolio_assets/Flyer/img4.jpg';
+import flyer5 from '../../assets/portfolio_assets/Flyer/img5.jpg';
+import flyer6 from '../../assets/portfolio_assets/Flyer/img6.png';
+import flyer7 from '../../assets/portfolio_assets/Flyer/img7.jpg';
+import flyer8 from '../../assets/portfolio_assets/Flyer/img8.jpg';
+import flyer9 from '../../assets/portfolio_assets/Flyer/img9.jpg';
+import flyer10 from '../../assets/portfolio_assets/Flyer/img10.jpg';
+import flyer11 from '../../assets/portfolio_assets/Flyer/img11.jpg';
+import flyer12 from '../../assets/portfolio_assets/Flyer/img12.jpg';
 
 
 const Portfolio = () => {
@@ -57,6 +79,10 @@ const Portfolio = () => {
 
     const signageImgs = [threeDsignage1, threeDsignage2, threeDsignage3, threeDsignage4, threeDsignage5, threeDsignage6, threeDsignage7, threeDsignage8];
     const acrylicSignageImgs = [acrylicSignage1, acrylicSignage2, acrylicSignage3, acrylicSignage4];
+    const businessCardImgs = [businessCard1, businessCard2, businessCard3, businessCard4];
+    const constructionBoardImgs = [constructionBoard1, constructionBoard2, constructionBoard3];
+    const eachingPlateImgs = [eachingPlate1, eachingPlate2, eachingPlate3];
+    const flyerImgs = [flyer1, flyer2, flyer3, flyer4, flyer5, flyer6, flyer7, flyer8, flyer9, flyer10, flyer11, flyer12];
 
     return (
         <>
