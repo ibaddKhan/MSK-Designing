@@ -42,25 +42,37 @@ const Navbar = () => {
             <div className="flex items-center"><span>SERVICES</span> <FaChevronDown className="ml-2 text-sm " /></div>
             <div className="absolute left-0 top-full hidden group-hover:block bg-black text-white py-2 w-48 shadow-md">
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Graphic Design
+                3D Signage
               </a>
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Giveaway & Promotional Items
+                Acrylic Signage
               </a>
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Printing Services
+                Business Cards
               </a>
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Indoor & Outdoor Signs
+                Construction Boards
               </a>
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Corporate Photography
+                Eaching Plates
               </a>
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Digital Marketing
+                Flyers
               </a>
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Event Management
+                Light Boxes
+              </a>
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+                Rollups
+              </a>
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+                Signage Flex
+              </a>
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+                Stickers
+              </a>
+              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+                Vehicle Branding
               </a>
             </div>
           </div>
@@ -89,25 +101,37 @@ const Navbar = () => {
           </div>
           <div className="pl-4 mt-2 space-y-2 text-sm">
             <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Graphic Design
+              3D Signage
             </a>
             <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Giveaway & Promotional Items
+              Acrylic Signage
             </a>
             <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Printing Services
+              Business Cards
             </a>
             <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Indoor & Outdoor Signs
+              Construction Boards
             </a>
             <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Corporate Photography
+              Eaching Plates
             </a>
             <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Digital Marketing
+              Flyers
             </a>
             <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Event Management
+              Light Boxes
+            </a>
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
+              RollUp
+            </a>
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
+              Signage Flex
+            </a>
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
+              Stickers
+            </a>
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
+              Vehicle Branding
             </a>
           </div>
         </div>
