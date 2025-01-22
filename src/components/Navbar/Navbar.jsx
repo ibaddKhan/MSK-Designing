@@ -28,7 +28,7 @@ const Navbar = () => {
         } transition-all ease-in-out duration-300 text-white px-4`}
     >
       <div className="flex justify-start">
-        <img src={Logo} className="w-32" alt="Logo" />
+        <Link to={"/"}><img src={Logo} className="w-32" alt="Logo" /></Link>
       </div>
       <div className="flex justify-between items-center w-full md:w-auto space-x-7 mx-auto">
         <div className="block md:hidden ml-auto">
@@ -77,10 +77,10 @@ const Navbar = () => {
           }`}
       >
         <div>
-          <a className="block text-lg font-semibold hover:text-yellow-500 transition-colors">HOME</a>
+          <a to={"/"} className="block text-lg font-semibold hover:text-yellow-500 transition-colors">HOME</a>
         </div>
         <div>
-          <a className="block text-lg font-semibold hover:text-yellow-500 transition-colors">PORTFOLIO</a>
+          <Link to={"/portfolio"} className="block text-lg font-semibold hover:text-yellow-500 transition-colors">PORTFOLIO</Link>
         </div>
         <div>
           <div className="flex items-center justify-between cursor-pointer">
