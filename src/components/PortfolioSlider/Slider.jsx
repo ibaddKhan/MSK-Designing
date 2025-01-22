@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css/autoplay'; // Ensure you have this import
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'; // Import Autoplay here
 
 const ImageSlider = ({ images }) => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -17,7 +17,6 @@ const ImageSlider = ({ images }) => {
         setSelectedImage(null);
     };
 
-    // Close modal on scroll or swipe/tap
     useEffect(() => {
         const handleScroll = () => {
             if (selectedImage) closeModal();
@@ -45,14 +44,23 @@ const ImageSlider = ({ images }) => {
     return (
         <div className="container mx-auto relative">
             <Swiper
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]} // Include Autoplay module
                 spaceBetween={20}
-                slidesPerView={3}
                 navigation
                 pagination={{ clickable: true }}
                 loop={true}
                 autoplay={{
-                    delay: 1000
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
                 }}
                 className="w-full"
             >

@@ -171,7 +171,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <>
+        <div className='overflow-x-hidden'>
             <section className="fixed_bg relative z-0">
                 <SecondaryHero />
             </section>
@@ -190,18 +190,18 @@ const Portfolio = () => {
                                 transition: 'opacity 0.3s ease, transform 0.3s ease',
                             }}
                         >
-                            <div className='flex items-center justify-between'>
-                                <h2 className="text-4xl mt-10 mb-10 md:text-5xl font-bold text-white ml-0 md:ml-10 text-center md:text-start">
+                            <div className='flex flex-col md:flex-row items-center justify-between'>
+                                <h2 className="text-4xl mt-10 mb-4 md:mb-10 md:text-5xl font-bold text-white ml-0 md:ml-10 text-center md:text-start">
                                     <span className="text-yellow-500">{title}</span> {subtitle}
                                 </h2>
-                                <Link to={route} className='text-white ml-2 md:mr-10 cursor-pointer'>Lern more {">"}</Link>
+                                <Link to={route} className='text-white ml-2 mb-4 md:mb-0 md:mr-10 cursor-pointer'>Lern more {">"}</Link>
                             </div>
                             <ImageSlider images={images} />
                         </div>
                     ))}
                 </div>
             </section>
-        </>
+        </div>
     );
 };
 

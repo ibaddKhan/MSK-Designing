@@ -72,7 +72,7 @@ const Navbar = () => {
       {/* Mobile Navbar */}
       <div
         className={`navbar-mobile md:hidden ${isOpen ? "open" : ""
-          } absolute top-20 ${scrolling ? "top-16" : "mt-5 py-4"
+          } absolute top-20 ${scrolling ? "top-14" : "mt-5 py-4"
           }  mt-2 left-0 w-full h-screen bg-black text-white py-6 px-6 space-y-6 transition-transform transform ${isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
