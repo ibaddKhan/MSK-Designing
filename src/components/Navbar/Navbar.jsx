@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 flex items-center w-full z-50 ${scrolling ? "py-2 bg-black" : "mt-10 py-4"
+      className={`fixed top-0 left-0 mb-2 flex items-center w-full z-50 ${scrolling ? "py-2 bg-black" : "mt-10 py-4"
         } transition-all ease-in-out duration-300 text-white px-4`}
     >
       <div className="flex justify-start">
@@ -71,44 +71,54 @@ const Navbar = () => {
 
       {/* Mobile Navbar */}
       <div
-        className={`navbar-mobile md:hidden ${isOpen ? "open" : ""} absolute top-20 left-0 w-full bg-black text-white py-4 px-4 space-y-4 overflow-x-hidden`}
+        className={`navbar-mobile md:hidden ${isOpen ? "open" : ""
+          } absolute top-20 ${scrolling ? "top-16" : "mt-5 py-4"
+          }  mt-2 left-0 w-full h-screen bg-black text-white py-6 px-6 space-y-6 transition-transform transform ${isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
-        <div>   <a className="nav-link">HOME</a></div>
-        <div>  <a className="nav-link">PORTFOLIO</a></div>
         <div>
-          <div className="flex items-center">
-            <a className="nav-link">SERVICES</a>
+          <a className="block text-lg font-semibold hover:text-yellow-500 transition-colors">HOME</a>
+        </div>
+        <div>
+          <a className="block text-lg font-semibold hover:text-yellow-500 transition-colors">PORTFOLIO</a>
+        </div>
+        <div>
+          <div className="flex items-center justify-between cursor-pointer">
+            <span className="block text-lg font-semibold">SERVICES</span>
             <FaChevronDown className="ml-2 text-sm" />
           </div>
-          <div className="pl-4">
-            <a className="block py-1" href="#">
+          <div className="pl-4 mt-2 space-y-2 text-sm">
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
               Graphic Design
             </a>
-            <a className="block py-1" href="#">
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
               Giveaway & Promotional Items
             </a>
-            <a className="block py-1" href="#">
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
               Printing Services
             </a>
-            <a className="block py-1" href="#">
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
               Indoor & Outdoor Signs
             </a>
-            <a className="block py-1" href="#">
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
               Corporate Photography
             </a>
-            <a className="block py-1" href="#">
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
               Digital Marketing
             </a>
-            <a className="block py-1" href="#">
+            <a className="block hover:text-yellow-500 transition-colors" href="#">
               Event Management
             </a>
           </div>
         </div>
-        <div><a className="nav-link">ABOUT</a></div>
         <div>
-          <a className="nav-link">CONTACT</a>
+          <a className="block text-lg font-semibold hover:text-yellow-500 transition-colors">ABOUT</a>
+        </div>
+        <div>
+          <a className="block text-lg font-semibold hover:text-yellow-500 transition-colors">CONTACT</a>
         </div>
       </div>
+
     </div>
   );
 };
