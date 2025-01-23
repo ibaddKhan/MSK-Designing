@@ -41,9 +41,9 @@ const Navbar = () => {
           <div className="nav-link group relative flex items-center cursor-pointer">
             <div className="flex items-center"><span>SERVICES</span> <FaChevronDown className="ml-2 text-sm " /></div>
             <div className="absolute left-0 top-full hidden group-hover:block bg-black text-white py-2 w-48 shadow-md">
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+              <Link to={'/services/3dSignage'} className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 3D Signage
-              </a>
+              </Link>
               <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
                 Acrylic Signage
               </a>
@@ -100,9 +100,9 @@ const Navbar = () => {
             <FaChevronDown className="ml-2 text-sm" />
           </div>
           <div className="pl-4 mt-2 space-y-2 text-sm">
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
+            <Link to={'/services/3dSignage'} className="block hover:text-yellow-500 transition-colors" href="#">
               3D Signage
-            </a>
+            </Link>
             <a className="block hover:text-yellow-500 transition-colors" href="#">
               Acrylic Signage
             </a>

@@ -6,6 +6,7 @@ import OurServices from "../../components/ServicesCard/SeviceCard";
 import Hero from "../../components/Hero/Hero";
 import Features from "../../components/FeatureCards/FeatureCards";
 import ContactForm from "../../components/ContactForm/ContactForm";
+import TestimonialsSlider from "../../components/Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -21,6 +22,9 @@ const Home = () => {
       </section>
       <section className="relative z-10 ">
         <OurServices />
+      </section>
+      <section className="relative z-10 ">
+        <TestimonialsSlider />
       </section>
       <section className="relative z-10 ">
         <Features />

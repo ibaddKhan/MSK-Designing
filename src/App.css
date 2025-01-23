@@ -26,6 +26,12 @@
 * {
   font-family: "Poppins", serif;
 }
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
 .Marquee {
   width: 85vw;
   box-sizing: border-box;
@@ -169,4 +175,28 @@
 
 .slide-in-delay-3 {
   animation-delay: 0.5s;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes slideInn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-gallery-img {
+  animation: slideInn 1s ease-out forwards;
 }
