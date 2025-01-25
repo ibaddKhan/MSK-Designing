@@ -63,7 +63,7 @@ const TestimonialsSlider = () => {
     return (
         <div className="max-w-5xl mx-auto py-10 px-4">
             <h2 className="text-5xl text-center mx-3 font-bold mb-8">
-                WHAT OUR <span className="text-yellow-500">CLIENTS</span> SAY
+                WHAT OUR <span className="text-[#fca821]">CLIENTS</span> SAY
             </h2>
             <Swiper
                 pagination={{ clickable: true }}

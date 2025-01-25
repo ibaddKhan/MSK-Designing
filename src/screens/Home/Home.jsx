@@ -7,6 +7,8 @@ import Hero from "../../components/Hero/Hero";
 import Features from "../../components/FeatureCards/FeatureCards";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import TestimonialsSlider from "../../components/Testimonials/Testimonials";
+import { FaArrowUp } from "react-icons/fa";
+import BackToTopButton from "../../components/BacktoTop/BacktoTop";
 
 const Home = () => {
   return (
@@ -32,12 +34,15 @@ const Home = () => {
       <section className="relative z-10 ">
         <ContactForm />
       </section>
-      <section className="absolute z-20">
+      <section className="relative z-10 ">
+        <BackToTopButton />
+      </section>
+      {/* <section className="absolute z-20">
         <div
           className="elfsight-app-ab942225-88dc-4c18-87e3-4d342f1c3fce"
           data-elfsight-app-lazy
         ></div>
-      </section>
+      </section> */}
     </>
   );
 };

@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import TestimonialsSlider from "../Testimonials/Testimonials";
 
 const ServicePageComponent = ({
     bgFig,
@@ -73,7 +71,7 @@ const ServicePageComponent = ({
     return (
         <>
             <div className="bg-black relative  min-w-screen h-[600px] md:h-[400px]">
-                <div>
+                <div className="h-full">
                     <img
                         src={bgFig}
                         alt="Background"
@@ -129,9 +127,6 @@ const ServicePageComponent = ({
                     </div>
 
                 </div>
-            </div>
-            <div className="">
-                <section><TestimonialsSlider /></section>
             </div>
         </>
     );

@@ -41,39 +41,39 @@ const Navbar = () => {
           <div className="nav-link group relative flex items-center cursor-pointer">
             <div className="flex items-center"><span>SERVICES</span> <FaChevronDown className="ml-2 text-sm " /></div>
             <div className="absolute left-0 top-full hidden group-hover:block bg-black text-white py-2 w-48 shadow-md">
-              <Link to={'/services/3dSignage'} className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+              <Link to="/services/3dSignage" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
                 3D Signage
               </Link>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Acrylic Signage
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Business Cards
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Construction Boards
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Eaching Plates
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+              <Link to="/services/flyers" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
                 Flyers
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Light Boxes
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
-                Rollups
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+              </Link>
+              <Link to="/services/signage_flex" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
                 Signage Flex
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+              </Link>
+              <Link to="/services/stickers" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
                 Stickers
-              </a>
-              <a className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500" href="#">
+              </Link>
+              <Link to="/services/vehicle_branding" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
                 Vehicle Branding
-              </a>
+              </Link>
+              <Link to="/services/roll_up_banners" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
+                Rollups
+              </Link>
+              <Link to="/services/light_boxes" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
+                Light Boxes
+              </Link>
+              <Link to="/services/acrylic_signage" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
+                Acrylic Signage
+              </Link>
+              <Link to="/services/business_cards" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
+                Business Cards
+              </Link>
+              <Link to="/services/construction_boards" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
+                Construction Boards
+              </Link>
+              <Link to="/services/eaching_plates" className="block px-4 py-2 hover:bg-gray-700 hover:border-b-2 hover:border-yellow-500">
+                Eaching Plates
+              </Link>
             </div>
           </div>
           <a className="nav-link">ABOUT</a>
@@ -100,39 +100,39 @@ const Navbar = () => {
             <FaChevronDown className="ml-2 text-sm" />
           </div>
           <div className="pl-4 mt-2 space-y-2 text-sm">
-            <Link to={'/services/3dSignage'} className="block hover:text-yellow-500 transition-colors" href="#">
+            <Link to={'/services/3dSignage'} className="block hover:text-yellow-500 transition-colors">
               3D Signage
             </Link>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Acrylic Signage
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Business Cards
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Construction Boards
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Eaching Plates
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
+            <Link to={'/services/flyers'} className="block hover:text-yellow-500 transition-colors">
               Flyers
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
-              Light Boxes
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
-              RollUp
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
+            </Link>
+            <Link to={'/services/signage_flex'} className="block hover:text-yellow-500 transition-colors">
               Signage Flex
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
+            </Link>
+            <Link to={'/services/stickers'} className="block hover:text-yellow-500 transition-colors">
               Stickers
-            </a>
-            <a className="block hover:text-yellow-500 transition-colors" href="#">
+            </Link>
+            <Link to={'/services/vehicle_branding'} className="block hover:text-yellow-500 transition-colors">
               Vehicle Branding
-            </a>
+            </Link>
+            <Link to={'/services/roll_up_banners'} className="block hover:text-yellow-500 transition-colors">
+              RollUp
+            </Link>
+            <Link to={'/services/light_boxes'} className="block hover:text-yellow-500 transition-colors">
+              Light Boxes
+            </Link>
+            <Link to={'/services/acrylic_signage'} className="block hover:text-yellow-500 transition-colors">
+              Acrylic Signage
+            </Link>
+            <Link to={'/services/business_cards'} className="block hover:text-yellow-500 transition-colors">
+              Business Cards
+            </Link>
+            <Link to={'/services/construction_boards'} className="block hover:text-yellow-500 transition-colors">
+              Construction Boards
+            </Link>
+            <Link to={'/services/eaching_plates'} className="block hover:text-yellow-500 transition-colors">
+              Eaching Plates
+            </Link>
           </div>
         </div>
         <div>

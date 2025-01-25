@@ -68,6 +68,7 @@ import vehicleBranding3 from '../../assets/portfolio_assets/Vehcle Branding/img3
 import vehicleBranding4 from '../../assets/portfolio_assets/Vehcle Branding/img4.jpg';
 import vehicleBranding5 from '../../assets/portfolio_assets/Vehcle Branding/img5.jpeg';
 import { Link } from 'react-router-dom';
+import TestimonialsSlider from '../../components/Testimonials/Testimonials';
 
 const signageImgs = [threeDsignage1, threeDsignage2, threeDsignage3, threeDsignage4, threeDsignage5, threeDsignage6, threeDsignage7, threeDsignage8];
 const acrylicSignageImgs = [acrylicSignage1, acrylicSignage2, acrylicSignage3, acrylicSignage4];
@@ -156,17 +157,17 @@ const Portfolio = () => {
     }, []);
 
     const sections = [
-        { id: "3d_signage_div", title: "3D", subtitle: "Signage", images: signageImgs, route: "/3d_signage" },
-        { id: "acrylic_signage_div", title: "Acrylic", subtitle: "Signage", images: acrylicSignageImgs, route: "/acrylic_signage" },
-        { id: "business_card_div", title: "Business", subtitle: "Cards", images: businessCardImgs, route: "/business_cards" },
-        { id: "construction_board_div", title: "Construction", subtitle: "Boards", images: constructionBoardImgs, route: "/construction_boards" },
-        { id: "eaching_plate_div", title: "Eaching", subtitle: "Plates", images: eachingPlateImgs, route: "/eaching_plates" },
-        { id: "flyer_div", title: "Flyers", subtitle: "Printing & Designing", images: flyerImgs, route: "/flyers" },
-        { id: "light_box_div", title: "Light", subtitle: "Boxes", images: lightBoxImgs, route: "/light_boxes" },
-        { id: "roll_up_div", title: "Roll-Up", subtitle: "Banners", images: rollUpImgs, route: "/roll_up_banners" },
-        { id: "signage_flex_div", title: "Signage", subtitle: "Flex", images: signageFlexImgs, route: "/signage_flex" },
-        { id: "sticker_div", title: "Stickers", subtitle: "Printing & Designing", images: stickerImgs, route: "/stickers" },
-        { id: "vehicle_branding_div", title: "Vehicle", subtitle: "Branding", images: vehicleBrandingImgs, route: "/vehicle_branding" },
+        { id: "3d_signage_div", title: "3D", subtitle: "Signage", images: signageImgs, route: "/services/3dSignage" },
+        { id: "acrylic_signage_div", title: "Acrylic", subtitle: "Signage", images: acrylicSignageImgs, route: "/services/acrylic_signage" },
+        { id: "business_card_div", title: "Business", subtitle: "Cards", images: businessCardImgs, route: "/services/business_cards" },
+        { id: "construction_board_div", title: "Construction", subtitle: "Boards", images: constructionBoardImgs, route: "/services/construction_boards" },
+        { id: "eaching_plate_div", title: "Eaching", subtitle: "Plates", images: eachingPlateImgs, route: "/services/eaching_plates" },
+        { id: "flyer_div", title: "Flyers", subtitle: "Printing & Designing", images: flyerImgs, route: "/services/flyers" },
+        { id: "light_box_div", title: "Light", subtitle: "Boxes", images: lightBoxImgs, route: "/services/light_boxes" },
+        { id: "roll_up_div", title: "Roll-Up", subtitle: "Banners", images: rollUpImgs, route: "/services/roll_up_banners" },
+        { id: "signage_flex_div", title: "Signage", subtitle: "Flex", images: signageFlexImgs, route: "/services/signage_flex" },
+        { id: "sticker_div", title: "Stickers", subtitle: "Printing & Designing", images: stickerImgs, route: "/services/stickers" },
+        { id: "vehicle_branding_div", title: "Vehicle", subtitle: "Branding", images: vehicleBrandingImgs, route: "/services/vehicle_branding" },
 
     ];
 
@@ -201,6 +202,7 @@ const Portfolio = () => {
                     ))}
                 </div>
             </section>
+            <TestimonialsSlider />
         </div>
     );
 };

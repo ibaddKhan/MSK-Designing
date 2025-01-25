@@ -10,6 +10,7 @@ import img5 from "../../../assets/portfolio_assets/3D Signage/img5.jpeg";
 import img6 from "../../../assets/portfolio_assets/3D Signage/img6.jpeg";
 import img7 from "../../../assets/portfolio_assets/3D Signage/img7.jpeg";
 import img8 from "../../../assets/portfolio_assets/3D Signage/img8.jpeg";
+import TestimonialsSlider from '../../../components/Testimonials/Testimonials';
 
 
 const ThreeDSignage = () => {
@@ -35,7 +36,9 @@ const ThreeDSignage = () => {
                 button2Text="Get Quotes"
             />
             <ImageGallery images={images} />
-
+            <div className="">
+                <section><TestimonialsSlider /></section>
+            </div>
         </div>
     )
 }
