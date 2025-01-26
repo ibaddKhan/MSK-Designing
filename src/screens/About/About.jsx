@@ -154,7 +154,7 @@ const About = () => {
                                     {word}
                                 </span>
                             ))}
-                            <span id="uae_text">
+                            <span id="uae_text" className='font-semibold'>
                                 <span id="u">U</span><span id="a">A</span><span id="e">E</span><span id="period">.</span>
                             </span>
                         </p>

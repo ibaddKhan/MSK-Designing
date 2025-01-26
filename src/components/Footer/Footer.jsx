@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Left Section */}
                 <div>
-                    <h1 className="text-4xl font-bold text-[#fca821]">PW</h1>
+                    <h2 className="text-4xl font-bold"> <span className="text-[#0080ff]">M</span> <span className="text-[#ed008c]">S</span> <span className="text-[#fef200]">K</span></h2>
                     <p className="mt-4">
                         We are committed to providing high-quality custom printing services in Pakistan. Quality print and timely delivery is our motto.
                     </p>
