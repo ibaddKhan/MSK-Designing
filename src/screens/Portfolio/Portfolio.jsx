@@ -69,6 +69,7 @@ import vehicleBranding4 from '../../assets/portfolio_assets/Vehcle Branding/img4
 import vehicleBranding5 from '../../assets/portfolio_assets/Vehcle Branding/img5.jpeg';
 import { Link } from 'react-router-dom';
 import TestimonialsSlider from '../../components/Testimonials/Testimonials';
+import BackToTopButton from '../../components/BacktoTop/BacktoTop';
 
 const signageImgs = [threeDsignage1, threeDsignage2, threeDsignage3, threeDsignage4, threeDsignage5, threeDsignage6, threeDsignage7, threeDsignage8];
 const acrylicSignageImgs = [acrylicSignage1, acrylicSignage2, acrylicSignage3, acrylicSignage4];
@@ -203,6 +204,9 @@ const Portfolio = () => {
                 </div>
             </section>
             <TestimonialsSlider />
+            <section className=" ">
+                <BackToTopButton />
+            </section>
         </div>
     );
 };

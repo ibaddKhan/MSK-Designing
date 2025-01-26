@@ -1,48 +1,83 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import boardImg from "../../assets/services_imgs/board.png";
+import box from "../../assets/services_imgs/box.png";
+import card from "../../assets/services_imgs/card.png";
+import flyer from "../../assets/services_imgs/flyer.png";
+import nameplate from "../../assets/services_imgs/nameplate.png";
+import rollup from "../../assets/services_imgs/rollup.png";
+import signage from "../../assets/services_imgs/signage.png";
+import simpleSignage from "../../assets/services_imgs/Simple Signage.png";
+import sticker from "../../assets/services_imgs/sticker.png";
+import threeDSign from "../../assets/services_imgs/threeDSign.png";
+import vehicle from "../../assets/services_imgs/vehicle.png";
 
 const services = [
     {
-        title: "Promotional Product & Give Away",
-        description:
-            "We help you to make your brand memorable with our unique and customized promotional products.",
-        icon: "👕",
-        link: "/services/promotional-product",
+        title: "3D Signage",
+        description: "High-quality 3D signage to give your brand a modern and professional appearance.",
+        image: threeDSign,
+        link: "/services/3dSignage",
     },
     {
-        title: "Indoor & Outdoor Sign",
-        description:
-            "We provide you with talented designers to present you with just-for-you designs considering your style and your property's unique features.",
-        icon: "📋",
-        link: "/services/indoor-outdoor-sign",
+        title: "Flyers",
+        description: "Creative and custom-designed flyers to promote your business effectively.",
+        image: flyer,
+        link: "/services/flyers",
     },
     {
-        title: "Corporate Photography",
-        description:
-            "We offer you the expertise of our skilled photographers to deliver personalized photography that matches your style and showcases your company's distinctive character.",
-        icon: "📸",
-        link: "/services/corporate-photography",
+        title: "Signage Flex",
+        description: "Durable and vibrant signage flex designs for both indoor and outdoor use.",
+        image: signage,
+        link: "/services/signage_flex",
     },
     {
-        title: "Digital Marketing",
-        description:
-            "Our team of creative experts is dedicated to crafting tailored digital and marketing strategies that align perfectly with your brand.",
-        icon: "📣",
-        link: "/services/digital-marketing",
+        title: "Stickers",
+        description: "Custom-made stickers to add personality and promote your brand uniquely.",
+        image: sticker,
+        link: "/services/stickers",
     },
     {
-        title: "Offset Printing",
-        description:
-            "Our printing services are suitable for every situation. Whether you're promoting or pivoting your brand.",
-        icon: "🖨️",
-        link: "/services/offset-printing",
+        title: "Vehicle Branding",
+        description: "Transform your vehicle into a mobile advertisement with our expert vehicle branding solutions.",
+        image: vehicle,
+        link: "/services/vehicle_branding",
     },
     {
-        title: "Graphic Designer",
-        description:
-            "Our services include stunning logo designs, customized flyers, brochures, and everything you're required for your brand.",
-        icon: "🎨",
-        link: "/services/graphic-designer",
+        title: "Rollups",
+        description: "Portable and professional roll-up banners for exhibitions, events, and promotions.",
+        image: rollup,
+        link: "/services/roll_up_banners",
+    },
+    {
+        title: "Light Boxes",
+        description: "Illuminated light boxes for eye-catching advertising and signage solutions.",
+        image: box,
+        link: "/services/light_boxes",
+    },
+    {
+        title: "Acrylic Signage",
+        description: "Stylish and durable acrylic signage for modern branding and decoration.",
+        image: simpleSignage,
+        link: "/services/acrylic_signage",
+    },
+    {
+        title: "Business Cards",
+        description: "Premium business card designs that leave a lasting impression.",
+        image: card,
+        link: "/services/business_cards",
+    },
+    {
+        title: "Construction Boards",
+        description: "High-quality construction boards to display essential information at project sites.",
+        image: boardImg,
+        link: "/services/construction_boards",
+    },
+    {
+        title: "Eaching Plates",
+        description: "Custom-etched plates for signage, branding, and decorative purposes.",
+        image: nameplate,
+        link: "/services/eaching_plates",
     },
 ];
 
@@ -81,16 +116,23 @@ const OurServices = () => {
                 OUR
                 <span className="text-[#fca821] text-5xl"> SERVICES</span>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 px-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
                 {services.map((service, index) => (
                     <div
                         key={index}
                         data-index={index}
-                        className={`service-item p-6 rounded-lg transition-all flex flex-col justify-between ${visibleSections.includes(`${index}`) ? "fade-in scale-up" : "opacity-0 scale-95"
+                        className={`service-item border-2 border-black p-6 rounded-lg transition-all flex flex-col justify-between ${visibleSections.includes(`${index}`) ? "fade-in scale-up" : "opacity-0 scale-95"
                             }`}
                     >
                         <div>
-                            <div className="text-[#fca821] text-4xl mb-4">{service.icon}</div>
+                            <div className="flex justify-center">
+                                <img
+                                    src={service.image}
+                                    alt={service.title}
+                                    className="w-48 h-48 object-fit mb-4 rounded-lg"
+                                />
+                            </div>
+
                             <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
                             <p className="text-gray-600 mb-4">{service.description}</p>
                         </div>

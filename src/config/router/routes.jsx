@@ -16,6 +16,7 @@ import SignageFlex from "../../screens/Services/SignageFlex/SignageFlex";
 import Stickers from "../../screens/Services/Stickers/Stickers";
 import VehicleBranding from "../../screens/Services/VehicleBranding/VehicleBranding";
 import About from "../../screens/About/About";
+import Contact from "../../screens/Contact/Contact";
 
 const Routers = () => {
   return (
@@ -38,6 +39,7 @@ const Routers = () => {
           <Route path="/services/vehicle_branding" element={<VehicleBranding />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

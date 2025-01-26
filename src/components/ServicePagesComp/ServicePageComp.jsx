@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import BackToTopButton from "../BacktoTop/BacktoTop";
 
 const ServicePageComponent = ({
     bgFig,
@@ -128,6 +129,9 @@ const ServicePageComponent = ({
 
                 </div>
             </div>
+            <section className=" ">
+                <BackToTopButton />
+            </section>
         </>
     );
 };

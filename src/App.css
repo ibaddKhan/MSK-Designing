@@ -1,3 +1,24 @@
+/* Scrollbar styling for Webkit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* Black theme for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fca821; /* Accent color for the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #000; /* Adds spacing and matches the black theme */
+}
+
+/* Styling for Firefox */
+html {
+  scrollbar-width: thin; /* Makes scrollbar thinner */
+  scrollbar-color: #fca821 #000; /* Thumb color and track color */
+}
+
 .nav-link {
   position: relative;
   display: inline-block;
@@ -224,4 +245,10 @@
 
 .slide-in-gallery-img {
   animation: slideInn 1s ease-out forwards;
+}
+
+@media (max-width: 640px) {
+  .calendly-inline-widget {
+    height: 845px !important;
+  }
 }

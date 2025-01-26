@@ -13,6 +13,7 @@ import TestimonialsSlider from '../../components/Testimonials/Testimonials';
 import CardSection from '../../components/Satisfaction-card/Cards';
 import AboutCardSection from '../../components/AboutUsCard/AboutUsCard';
 import Story from '../../components/AboutPageStory/Story';
+import BackToTopButton from '../../components/BacktoTop/BacktoTop';
 
 
 const About = () => {
@@ -36,7 +37,7 @@ const About = () => {
             document.getElementById('e').style.color = 'red'; // Change E to red
         }, delayE);
         setTimeout(() => {
-            document.getElementById('period').style.color = 'black'; // Change E to red
+            document.getElementById('period').style.color = 'white'; // Change E to red
         }, delaydot);
     }
 
@@ -172,7 +173,6 @@ const About = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -183,6 +183,9 @@ const About = () => {
             <div className="">
                 <section><TestimonialsSlider /></section>
             </div>
+            <section className=" ">
+                <BackToTopButton />
+            </section>
         </div>
     )
 }

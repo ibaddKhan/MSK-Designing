@@ -34,7 +34,7 @@ const ContactForm = () => {
                 className={`bg-[#1a1b1c] text-white rounded-full shadow-lg p-8 md:p-12 lg:flex lg:flex-row-reverse lg:gap-12 `}
             >
                 {/* Form Section */}
-                <div className="lg:w-1/2 mb-10 lg:mt-32 mt-8 text-gray-300">
+                <div id='data_content' className="lg:w-1/2 mb-10 lg:mt-32 mt-8 text-gray-300">
                     <h2 className="text-3xl md:text-4xl mx-3 font-bold mb-8">
                         We Offer <span className="text-[#fca821]">Creative</span> Solutions
                     </h2>
