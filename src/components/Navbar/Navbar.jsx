@@ -293,7 +293,13 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <a className="block text-lg font-semibold hover:-[#fca821] transition-colors">ABOUT</a>
+          <NavLink
+            to={"/about"}
+            className={({ isActive }) => `block text-lg font-semibold hover:text-[#fca821] transition-colors ${isActive ? 'text-[#fca821]' : ''}`}
+            onClick={() => setIsOpen(false)} // Close the menu on click
+          >
+            ABOUT
+          </NavLink>
         </div>
         <div>
           <a className="block text-lg font-semibold hover:text-[#fca821] transition-colors">CONTACT</a>

@@ -2,37 +2,53 @@ import React, { useState, useEffect } from 'react';
 
 const Story = () => {
     const [scrollProgress, setScrollProgress] = useState(0);
+    const [hasScrolled, setHasScrolled] = useState(false); // Track if scroll has happened
 
     useEffect(() => {
         const handleScroll = () => {
-            const element = document.getElementById('story');
-            if (!element) return; // Check if the element exists
+            if (hasScrolled) return; // Stop further animation after the first scroll
 
             const scrollTop = window.scrollY;
             const windowHeight = window.innerHeight;
+            const element = document.getElementById('story');
             const elementTop = element.offsetTop;
             const elementHeight = element.offsetHeight;
 
-            // Calculate the scroll progress relative to the element
-            const totalScroll = elementTop + elementHeight - windowHeight;
-            const progress = Math.min(Math.max((scrollTop - elementTop + windowHeight) / totalScroll, 0), 1);
+            // Start calculating scroll progress only when the element is in view
+            const totalHeight = elementTop + elementHeight - windowHeight;
+            let progress = (scrollTop - elementTop + windowHeight) / totalHeight;
+
+            // Clamp progress between 0 and 1
+            progress = Math.min(Math.max(progress, 0), 1);
+
+            // Adjust progress so that 20% of the card height completes the translate
+            if (progress >= 0.2) {
+                progress = (progress - 0.2) / 0.2; // Shift start to 20% and scale to 0-1 range
+            } else {
+                progress = 0;
+            }
 
             setScrollProgress(progress);
+
+            // Mark scroll as completed when it reaches 100%
+            if (progress >= 1) {
+                setHasScrolled(true);
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [hasScrolled]);
 
     return (
         <div
             id="story"
-            className="p-6 bg-gray-50 text-gray-800 rounded-2xl shadow-lg border-2 border-black border-dashed max-w-4xl mx-auto mt-10 transition-all duration-700"
+            className="p-6  bg-gray-50 text-gray-800 rounded-2xl shadow-lg border-2 border-black border-dashed max-w-4xl mt-10 transition-all duration-700"
             style={{
-                opacity: Math.min(scrollProgress + 0.2, 1), // Adjust opacity based on scroll progress
-                transform: `translateX(${(1 - scrollProgress) * 200}px)`, // Moves from -200px to 200px based on scroll
+                opacity: Math.min(scrollProgress + 0.2, 1), // Starts at 0.2 opacity when the page loads
+                transform: `translateX(${(1 - scrollProgress) * 200}px)`, // Moves as you scroll
             }}
         >
             <h1 className="text-4xl font-bold text-[#fca821] mb-4">Reinventing Advertising</h1>
