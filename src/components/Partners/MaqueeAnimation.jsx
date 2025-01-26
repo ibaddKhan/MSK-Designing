@@ -18,7 +18,7 @@ const Marquee = () => {
             <h2 className="text-3xl font-bold text-center mb-12">
                 WE BUILD RELATIONSHIPS
                 <br />
-                <span className="text-yellow-500 text-5xl">PARTNERS & TECH</span>
+                <span className="text-[#fca821] text-5xl">PARTNERS & TECH</span>
             </h2>
             <div className="Marquee mx-auto">
                 <div className="Marquee-content">

@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Left Section */}
                 <div>
-                    <h1 className="text-4xl font-bold text-yellow-500">PW</h1>
+                    <h1 className="text-4xl font-bold text-[#fca821]">PW</h1>
                     <p className="mt-4">
                         We are committed to providing high-quality custom printing services in Pakistan. Quality print and timely delivery is our motto.
                     </p>
@@ -43,15 +43,15 @@ const Footer = () => {
                     </ul>
                     <h3 className="text-lg font-semibold mt-4">Follow Us</h3>
                     <div className="flex space-x-4 mt-2">
-                        <a href="#" className="hover:text-yellow-500">Twitter</a>
-                        <a href="#" className="hover:text-yellow-500">Facebook</a>
-                        <a href="#" className="hover:text-yellow-500">Instagram</a>
-                        <a href="#" className="hover:text-yellow-500">LinkedIn</a>
+                        <a href="#" className="hover:text-[#fca821]">Twitter</a>
+                        <a href="#" className="hover:text-[#fca821]">Facebook</a>
+                        <a href="#" className="hover:text-[#fca821]">Instagram</a>
+                        <a href="#" className="hover:text-[#fca821]">LinkedIn</a>
                     </div>
                 </div>
             </div>
             <div className="text-center mt-8 text-sm">
-                <p>Copyright 2025 - Powered By <span className="text-yellow-500">Softvira</span></p>
+                <p>Copyright 2025 - Powered By <span className="text-[#fca821]">Softvira</span></p>
             </div>
         </footer>
     );

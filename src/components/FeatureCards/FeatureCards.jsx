@@ -60,7 +60,7 @@ const Features = () => {
         <div className="bg-white py-12">
             <div className="container mx-auto text-center">
                 <h2 className="text-5xl mx-3 font-bold mb-8">
-                    WHAT MAKES US <span className="text-yellow-500">DIFFERENT</span>
+                    WHAT MAKES US <span className="text-[#fca821]">DIFFERENT</span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                     {features.map((feature, index) => (

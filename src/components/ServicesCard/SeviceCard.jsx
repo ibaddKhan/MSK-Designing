@@ -79,7 +79,7 @@ const OurServices = () => {
         <div className="bg-gray-100 py-12">
             <h2 className="text-5xl font-bold text-center mb-12">
                 OUR
-                <span className="text-yellow-500 text-5xl"> SERVICES</span>
+                <span className="text-[#fca821] text-5xl"> SERVICES</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 px-10">
                 {services.map((service, index) => (
@@ -90,14 +90,14 @@ const OurServices = () => {
                             }`}
                     >
                         <div>
-                            <div className="text-yellow-500 text-4xl mb-4">{service.icon}</div>
+                            <div className="text-[#fca821] text-4xl mb-4">{service.icon}</div>
                             <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h3>
                             <p className="text-gray-600 mb-4">{service.description}</p>
                         </div>
                         <div className="mt-auto">
                             <Link
                                 to={service.link}
-                                className="text-yellow-500 font-semibold hover:underline"
+                                className="text-[#fca821] font-semibold hover:underline"
                             >
                                 Learn More →
                             </Link>

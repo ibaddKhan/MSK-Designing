@@ -36,7 +36,7 @@ const ContactForm = () => {
                 {/* Form Section */}
                 <div className="lg:w-1/2 mb-10 lg:mt-32 mt-8 text-gray-300">
                     <h2 className="text-3xl md:text-4xl mx-3 font-bold mb-8">
-                        We Offer <span className="text-yellow-500">Creative</span> Solutions
+                        We Offer <span className="text-[#fca821]">Creative</span> Solutions
                     </h2>
                     <div className="md:text-xl">
                         <p className="mb-4">

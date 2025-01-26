@@ -15,6 +15,7 @@ import Rollups from "../../screens/Services/Rollups/Rollups";
 import SignageFlex from "../../screens/Services/SignageFlex/SignageFlex";
 import Stickers from "../../screens/Services/Stickers/Stickers";
 import VehicleBranding from "../../screens/Services/VehicleBranding/VehicleBranding";
+import About from "../../screens/About/About";
 
 const Routers = () => {
   return (
@@ -36,6 +37,7 @@ const Routers = () => {
           <Route path="/services/stickers" element={<Stickers />} />
           <Route path="/services/vehicle_branding" element={<VehicleBranding />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>

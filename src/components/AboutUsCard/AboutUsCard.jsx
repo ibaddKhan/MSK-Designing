@@ -7,7 +7,7 @@ const stats = [
     { title: "Product Designs", value: 5404 },
 ];
 
-const CardSection = () => {
+const AboutCardSection = () => {
     const cardRefs = useRef([]);
     const [counters, setCounters] = useState(stats.map(() => 0));
 
@@ -53,13 +53,13 @@ const CardSection = () => {
     };
 
     return (
-        <div className="bg-[#171717] text-white py-16">
-            <h2 className="text-3xl font-bold text-center mb-12">
-                SOME WORK ABOUT US
+        <div className=" text-white py-16">
+            <h2 className="text-3xl text-black font-bold text-center mb-12">
+                SOME ACHIEVEMENTS
                 <br />
                 <span className="text-[#fca821] text-5xl">WE ARE PROUD OF OUR WORK</span>
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 md:px-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 px-6 md:px-16">
                 {stats.map((stat, index) => (
                     <div
                         key={index}
@@ -75,4 +75,4 @@ const CardSection = () => {
     );
 };
 
-export default CardSection;
+export default AboutCardSection;
