@@ -40,7 +40,7 @@ const Hero = () => {
             />
             <div
                 id="hero_content_div"
-                className="flex justify-between absolute md:inset-0 top-10 z-0 items-center px-4 sm:px-8 flex-col-reverse lg:flex-row"
+                className="flex justify-between absolute md:inset-0 top-5 z-0 items-center px-4 sm:px-8 flex-col-reverse lg:flex-row"
             >
                 <div className="relative mt-40 md:mt-0 z-40 px-4 sm:px-8 max-w-xl text-center lg:text-left">
                     <h1 className="text-white text-3xl sm:text-5xl font-bold leading-snug">

@@ -144,19 +144,16 @@ const Footer = () => {
                 <div>
                     <h2 className="text-lg font-semibold mb-4">Contact Details</h2>
                     <ul className="space-y-2 text-sm">
-                        <li>📞 +92 213 227 6129</li>
-                        <li>📱 +92 303 384 79234</li>
-                        <li>✉️ <a href="mailto:contact@printingwala.pk" className="hover:underline">contact@mskdesigining.com</a></li>
+                        <li>📱+971 526390662</li>
+                        <li>✉️ <a href="mailto:mskdesigningandprinting707@gmail.com" className="hover:underline">mskdesigningandprinting707@gmail.com</a></li>
                         <li>
                             🏢 Sharjah, UAE
                         </li>
                     </ul>
                     <h3 className="text-lg font-semibold mt-4">Follow Us</h3>
                     <div className="flex space-x-4 mt-2">
-                        <a href="#" className="hover:text-[#fca821]">Twitter</a>
-                        <a href="#" className="hover:text-[#fca821]">Facebook</a>
-                        <a href="#" className="hover:text-[#fca821]">Instagram</a>
-                        <a href="#" className="hover:text-[#fca821]">LinkedIn</a>
+                        <a href="https://www.facebook.com/GiftItems707/" target="_blank" className="hover:text-[#fca821]">Facebook</a>
+                        <a href="https://www.instagram.com/mskdesigni707/" target="_blank" className="hover:text-[#fca821]">Instagram</a>
                     </div>
                 </div>
             </div>
